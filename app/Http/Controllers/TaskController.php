@@ -7,29 +7,102 @@ use Illuminate\Support\Facades\Cookie;
 
 class TaskController extends Controller
 {
-    public function soal1(){
-        return view('Soal.soal1');
+
+    public function snake(){
+        return view('Soal.snake');
     }
 
-    public function postsoal1(Request $request){
-        if($request->input('soal1') == "esd{soal_binary}"){
-            return redirect('/soal2');
-        }return redirect('/soal1')->with(['message' => 'Jawaban Salah']);
+    public function rockpaperscsr(){
+        return view('Soal.rockpaperscsr');
     }
 
-    public function soal2(){
-        return view('Soal.soal2');
+    public function hideandseek(){
+        return view('Soal.hideandseek');
     }
 
-    public function postsoal2(Request $request){
-        if($request->input('soal2') == "esd{color_visible_but_invisible}"){
-            return redirect('/soal3');
-        }return redirect('/soal2')->with(['message' => 'Jawaban Salah']);
+    public function storehideandseek(Request $request){
+        if($request->input('flag') == "esd{hideandseek}"){
+            return redirect('/highlight');
+        }return redirect('/hideandseek')->with(['message' => 'Jawaban Salah']);
     }
 
-    public function soal3(Request $request){
-//        Cookie::make('hello', 'esd{jawabannya_cookie}', 360);
-        $data = $request->session()->put('flag', 'esd{jawabannya_cookie}');
-        return view('Soal.soal3', compact('data'));
+    public function highlight(){
+        return view('Soal.highlight');
+    }
+
+    public function storehighlight(Request $request){
+        if($request->input('flag') == "esd{color_visible_but_invisible}"){
+            return redirect('/secretimage');
+        }return redirect('/highlight')->with(['message' => 'Jawaban Salah']);
+    }
+
+    public function secretimage(){
+        return view('Soal.secretimage');
+    }
+
+    public function storesecretimage(Request $request){
+        if($request->input('flag') == "esd{kucingkeren}"){
+            return redirect('/hex');
+        }return redirect('/secretimage')->with(['message' => 'Jawaban Salah']);
+    }
+
+    public function hex(){
+        return view('Soal.hex');
+    }
+
+    public function storehex(Request $request){
+        if($request->input('flag') == "esd{#000000}"){
+            return redirect('/abstrackwords');
+        }return redirect('/hex')->with(['message' => 'Jawaban Salah']);
+    }
+
+    public function abstrackwords(){
+        return view('Soal.abstrackwords');
+    }
+
+    public function storeabstrackwords(Request $request){
+        if($request->input('flag') == "esd{peniti}"){
+            return redirect('/binary');
+        }return redirect('/abstrackwords')->with(['message' => 'Jawaban Salah']);
+    }
+
+    public function binary(){
+        return view('Soal.binary');
+    }
+
+    public function storebinary(Request $request){
+        if($request->input('flag') == "esd{soal_binary}"){
+            return redirect('/convert13');
+        }return redirect('/binary')->with(['message' => 'Jawaban Salah']);
+    }
+
+    public function convert13(){
+        return view('Soal.convert13');
+    }
+
+    public function storeconvert13(Request $request){
+        if($request->input('flag') == "esd{soalkesembilan}"){
+            return redirect('/soalbonus');
+        }return redirect('/convert13')->with(['message' => 'Jawaban Salah']);
+    }
+
+    public function soalbonus(){
+        return view('Soal.soalbonus');
+    }
+
+    public function storesoalbonus(Request $request){
+        if($request->input('flag') == "esd{takterlihatkan}"){
+            return redirect('/abstrackwords2');
+        }return redirect('/soalbonus')->with(['message' => 'Jawaban Salah']);
+    }
+
+    public function abstrackwords2(){
+        return view('Soal.abstrackwords2');
+    }
+
+    public function storeabstrackwords2(Request $request){
+        if($request->input('flag') == "esd{nomorsebelas}"){
+            return redirect('/binary');
+        }return redirect('/abstrackwords2')->with(['message' => 'Jawaban Salah']);
     }
 }

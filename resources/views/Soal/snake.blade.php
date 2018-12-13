@@ -1,6 +1,7 @@
 @extends('layouts.main')
 @section('title', 'Snake Game')
 @section('content')
+    <center><h1>Menangkan gamenya dengan score mencapai 20</h1></center>
 <center><canvas id="ruang" width="500" height="500" style="margin-top: 60px"></canvas></center>
 
 
@@ -88,8 +89,8 @@
 
                 var ekor = {x: nx, y: ny};
                 nilai++;
-                if (nilai === 5){
-                    alert("Selamat kamu berhasil memenangkan permainan, ganti kata setelah '/' dengan kata 'binary'")
+                if (nilai === 20){
+                    alert("Selamat kamu berhasil memenangkan permainan, ganti kata setelah '/' dengan kata 'rockpaperscsr'")
                         init()
                 }
                 //membuat makanan yang baru

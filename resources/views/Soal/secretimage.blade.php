@@ -15,23 +15,18 @@
                                 <div class="card col-12">
                                     <div class="card-body">
                                         <h4 class="card-title">
-                                            <strong>Soal 2</strong>
+                                            <strong style="margin-left: 15px;">Teka Teki 5</strong>
                                         </h4>
-                                        <p>Ini jawabannya buat kamu <span style="color: #ffffff">esd{color_visible_but_invisible}</span>
-                                        </p>
-                                        <div class="alert alert-success" id="hint">Hint! :
-                                            <ul>
-                                                <li>Lihat Soalnya.. Benar-Benar perhatikan Soalnya</li>
-                                            </ul>
-                                        </div>
-                                        <form action="/postsoal2" method="post">
+                                        <p style="margin-left: 15px;">Cek Gambarnya</p>
+                                        <img src="{{asset('image/kucingkeren.jpg')}}" alt="kucingkeren" title="kucingkeren" style="width:100%;height:60%">
+                                        <form action="/postsoal5" method="post">
                                             @csrf
                                             <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <input type="text" class="form-control" placeholder="Flag" aria-label="Flag" name="soal2">
+                                                <div class="input-group-prepend col-6">
+                                                    <input style="margin-top: 20px" type="text" class="form-control" placeholder="format jawab esd{jawaban}" aria-label="Flag" name="flag">
                                                 </div>
                                             </div>
-                                            <button style="margin-top: 15px" class="btn waves-effect waves-light btn-outline-success">Submit<i class="ml-2 ti-control-forward"></i></button>
+                                            <button style="margin-top: 15px; margin-left: 15px" class="btn waves-effect waves-light btn-outline-success">Submit<i class="ml-2 ti-control-forward"></i></button>
                                         </form>
                                     </div>
                                 </div>

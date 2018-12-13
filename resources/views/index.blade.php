@@ -8,6 +8,7 @@
             <li data-target="#demo" data-slide-to="0" class="active"></li>
             <li data-target="#demo" data-slide-to="1"></li>
             <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
         </ul>
 
         <!-- The slideshow -->
@@ -21,6 +22,9 @@
             </div>
             <div class="carousel-item">
                 <img src="{{asset('image/test2.jpg')}}" alt="New York" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('image/test3.jpg')}}" alt="New York" width="1100" height="500">
             </div>
         </div>
             </center>
@@ -51,7 +55,7 @@
                 <div class="card h-50 text-white bg-danger">
                     <div class="card-body">
                         <h3 class="card-title">Novel</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">This is our review about Novel "Negeri Diatas Awan".</p>
                         <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#myModal3">Chapter 1</a>
                         <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#myModal4">Chapter 2</a>
                     </div>
@@ -61,7 +65,7 @@
                 <div class="card h-50 text-white bg-danger">
                     <div class="card-body">
                         <h3 class="card-title">POSTER & VIDEO CAMPAIGN</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">This our video campaign about .</p>
                         <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#myModal1">Video</a>
                         <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#myModal2">Poster</a>
                     </div>
@@ -78,25 +82,25 @@
                     <img class="card-img-top" src="{{asset('image/umam.jpg')}}" alt="Card image" style="width:100%">
                     <div class="card-body">
                         <h3 class="card-title">Khaerul Umam</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">1202154148</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 py-2">
                 <div class="card h-20 text-white bg-danger">
-                    <img class="card-img-top" src="{{asset('image/umam.jpg')}}" alt="Card image" style="width:100%">
+                    <img class="card-img-top embed-responsive" src="{{asset('image/ikhsan.jpg')}}" alt="Card image" style="width:100%; height: 31.5%">
                     <div class="card-body">
                         <h3 class="card-title">Muhamad Ikhsan Laisa</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">1202150084</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 py-2">
                 <div class="card h-20 text-white bg-danger">
-                    <img class="card-img-top" src="{{asset('image/umam.jpg')}}" alt="Card image" style="width:100%">
+                    <img class="card-img-top" src="{{asset('image/yoel.jpg')}}" alt="Card image" style="width:100%; height: 31.5%">
                     <div class="card-body">
                         <h3 class="card-title">Yoel Febrian Tampubolon</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">1202150036</p>
                     </div>
                 </div>
             </div>
@@ -158,7 +162,6 @@
                                     yang membimbinya menuju ke penantian cinta tak berbalasnya?
                                 </p>
                                     <a href="/chapter1" class="btn btn-outline-light">Read Online</a>
-                                    <a href="#" class="btn btn-outline-light" >Download</a>
                                 </div>
                             </div>
                         </div>
@@ -208,7 +211,6 @@
                                         yang membimbinya menuju ke penantian cinta tak berbalasnya?
                                     </p>
                                     <a href="/chapter2" class="btn btn-outline-light">Read Online</a>
-                                    <a href="#" class="btn btn-outline-light">Download</a>
                                 </div>
                             </div>
                         </div>

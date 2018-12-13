@@ -36,7 +36,7 @@ function win(userChoice, compChoice) {
     setTimeout(() => userChoice_div.classList.remove('green-glow'), 1000);
     if (userScore >= 3){
         result_p.innerHTML = `You won! The game will restart!!!`;
-        alert("Masukkan kata '/snake' pada url untuk ke soal berikutnya");
+        alert("Masukkan kata '/hideandseek' pada url untuk ke soal berikutnya");
         reloadpage();
     }
 }

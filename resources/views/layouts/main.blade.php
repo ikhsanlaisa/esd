@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="/timer">Play The Games</a>
+                <a class="nav-item nav-link" href="/snake">Play The Games</a>
             </div>
         </div>
     </nav>

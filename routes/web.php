@@ -11,30 +11,47 @@
 |
 */
 
-//Route::get('/snake', function () {
-//    return view('soal.snake');
-//});
-//
-//Route::get('/rockpaperscsr', function () {
-//    return view('soal.rockpaperscsr');
-//});
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/timer', 'HomeController@timer');
+Route::get('/snake', 'TaskController@snake');
 
-Route::get('/chapter1', 'HomeController@chapter1');
+Route::get('/rockpaperscsr', 'TaskController@rockpaperscsr');
 
-Route::get('/chapter2', 'HomeController@chapter2');
+Route::get('/hideandseek', 'TaskController@hideandseek');
 
-Route::get('/binary', 'TaskController@soal1');
+Route::post('/postsoal3', 'TaskController@storehideandseek');
 
-Route::post('/postsoal1', 'TaskController@postsoal1');
+Route::get('/highlight', 'TaskController@highlight');
 
-Route::get('/soal2', 'TaskController@soal2');
+Route::post('/postsoal4', 'TaskController@storehighlight');
 
-Route::post('/postsoal2', 'TaskController@postsoal2');
+Route::get('/secretimage', 'TaskController@secretimage');
 
-Route::get('/soal3', 'TaskController@soal3');
+Route::post('/postsoal5', 'TaskController@storesecretimage');
+
+Route::get('/hex', 'TaskController@hex');
+
+Route::post('/postsoal6', 'TaskController@storehex');
+
+Route::get('/abstrackwords', 'TaskController@abstrackwords');
+
+Route::post('/postsoal7', 'TaskController@storeabstrackwords');
+
+Route::get('/binary', 'TaskController@binary');
+
+Route::post('/postsoal8', 'TaskController@storebinary');
+
+Route::get('/convert13', 'TaskController@convert13');
+
+Route::post('/postsoal9', 'TaskController@storeconvert13');
+
+Route::get('/soalbonus', 'TaskController@soalbonus');
+
+Route::post('/postsoal10', 'TaskController@storesoalbonus');
+
+Route::get('/abstrackwords2', 'TaskController@abstrackwords2');
+
+Route::post('/postsoal11', 'TaskController@storeabstrackwords2');
 Auth::routes();
 

@@ -15,23 +15,19 @@
                                 <div class="card col-12">
                                     <div class="card-body">
                                         <h4 class="card-title">
-                                            <strong style="margin-left: 15px;">Teka Teki 4</strong>
+                                            <strong style="margin-left: 15px">Teka Teki 3</strong>
                                         </h4>
-                                        <p style="margin-left: 15px;">Ini jawabannya buat kamu <span style="color: #ffffff">esd{color_visible_but_invisible}</span>
+                                        <p class="card-text" style="margin-left: 15px">
+                                            Periksa Semua Elemen pada halaman ini
                                         </p>
-                                        <div class="alert alert-success" style="margin-left: 15px;" id="hint">Hint! :
-                                            <ul>
-                                                <li>Lihat Soalnya.. Benar-Benar perhatikan Soalnya</li>
-                                            </ul>
-                                        </div>
-                                        <form action="/postsoal4" method="post">
+                                        <form action="/postsoal3" method="post">
                                             @csrf
                                             <div class="input-group">
                                                 <div class="input-group-prepend col-6">
                                                     <input type="text" class="form-control" placeholder="format jawab esd{jawaban}" aria-label="Flag" name="flag">
                                                 </div>
                                             </div>
-                                            <button style="margin-top: 15px;margin-left: 15px;" class="btn waves-effect waves-light btn-outline-success">Submit<i class="ml-2 ti-control-forward"></i></button>
+                                            <button style="margin-top: 15px; margin-left: 15px" class="btn waves-effect waves-light btn-outline-success">Submit<i class="ml-2 ti-control-forward"></i></button>
                                         </form>
                                     </div>
                                 </div>
@@ -42,4 +38,5 @@
             </div>
         </div>
     </div>
+    <h2 style="visibility:hidden">hideandseek</h2>
 @endsection

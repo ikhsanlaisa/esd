@@ -15,16 +15,15 @@
                                 <div class="card col-12">
                                     <div class="card-body">
                                         <h4 class="card-title">
-                                            <strong style="margin-left: 15px;">Teka Teki 4</strong>
+                                            <strong style="margin-left: 15px;">Soal Bonus <span style="color: #ffffff">takterlihatkan</span></strong>
                                         </h4>
-                                        <p style="margin-left: 15px;">Ini jawabannya buat kamu <span style="color: #ffffff">esd{color_visible_but_invisible}</span>
                                         </p>
                                         <div class="alert alert-success" style="margin-left: 15px;" id="hint">Hint! :
                                             <ul>
-                                                <li>Lihat Soalnya.. Benar-Benar perhatikan Soalnya</li>
+                                                <li>Periksa lagi HTML pada halaman ini!!</li>
                                             </ul>
                                         </div>
-                                        <form action="/postsoal4" method="post">
+                                        <form action="/postsoal10" method="post">
                                             @csrf
                                             <div class="input-group">
                                                 <div class="input-group-prepend col-6">

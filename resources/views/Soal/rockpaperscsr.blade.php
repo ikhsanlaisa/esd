@@ -3,6 +3,7 @@
 @section('content')
     <header>
         <h1>Rock Paper Scissors</h1>
+        <h1>Menangkan gamenya untuk naik ke level berikutnya!!</h1>
     </header>
     <div class="score-board">
         <div id="user-label" class="badge">user</div>
